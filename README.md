@@ -3,10 +3,15 @@ Simple Symfony4.1 Rest API using oauth2 secure authentification
 INSTALLATION: 
 
 1- git clone https://github.com/safoine27/symfony4-rest-api-oauth2.git
+
 2- cd symfony4-rest-api-oauth2
+
 3- composer install  
+
 4- change db credentials in .env
+
 5- run php bin/console doctrine:schema:update --force
+
 6- run php bin/console oauth:create --redirect-uri=http://www.redirecturi.com --grant-type=password --grant-type=refresh_token
  response would be something like this:
  
@@ -20,7 +25,9 @@ INSTALLATION:
  ------------------------------------------------------ --------------------------------------------------
 
 7- make a post request to the address http://127.0.0.1:8000/oauth/v2/token
+
    body: 
+   
    {
     "grant_type": "password",
     "client_id": "1_5gsz0lx68wowc404g44ww40gockc8oo44sgg80g4808wsg8w8s",
